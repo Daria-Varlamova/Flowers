@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Flowers</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <a class="logo" href="#">
+                    <img src="./pictures/logo.svg" alt="">
+                </a>
+                <nav class="menu-nav">
+                    <ul class="menu-nav__list">
+                        <li class="menu-nav__item">
+                            <a class="menu-nav__link link link-js" href="#">Магазины</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a class="menu-nav__link link link-js" href="#">Контакты</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a class="menu-nav__link link link-js" href="#">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="links-block">
+                    <a class="link-s link-tel link" href="tel:+36787547894">
+                        +3 67 8754 7894
+                    </a>
+
+                    <div class="toggle mob">
+                        <input type="radio" id="switch_left" name="switch_2" value="yes" />
+                        <label for="switch_left">Ru</label>
+                        <input type="radio" id="switch_right" name="switch_2" value="no" checked />
+                        <label for="switch_right">Eng</label>
+                    </div>
+
+                    <div class="link-wrap">
+                        <a class="link-s link btn" href="#form">
+                            Войти
+                        </a>
+                        <a class="link-s btn link-s_border link" href="#form">
+                            Создать аккаунт
+                        </a>
+                    </div>
+
+
+                    <div class="hamburger hamburger--squeeze hamburger-js">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="entry">
+        <picture class="bg">
+            <source media="(min-width:768px)" srcset="./pictures/bg-first-d.png">
+            <source media="(min-width:360px)" srcset="./pictures/bg-first-p.png">
+            <img src="./pictures/bg-first-m.png" alt="Flowers">
+        </picture>
+        <div class="block">
+            <h1 class="title h1">
+                Мы будем рады сотрудничать с вами на платформе 'Международной цветочной онлайн-площадки'!
+            </h1>
+            <div class="description">
+                Присоединяйтесь к нам и начните получать доход с <br> бизнеса в первый месяц регистрации!
+            </div>
+            <div class="box-link-btn">
+                <a class="box-link-btn__btn box-link-btn__btn_yellow btn" href="#">
+                    Начать покупать
+                </a>
+                <a class="box-link-btn__btn box-link-btn__btn_grey btn" href="#">
+                    Начать продавать
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-form" style="background-image: url(./pictures/banner-form.png);">
+        <div class="card-form" id="form" style="background-image: url(./pictures/bg-form.png);">
+            <div class="block-text">
+                <h2 class="title h2">
+                    Заполните форму и начните развивать свой бизнес прямо сейчас!
+                </h2>
+                <p>
+                    Регистрация на нашем сайте занимает несколько минут, просим ответить на все вопросы полностью и
+                    корректно! После подтверждения регистрации вы попадёте в систему, где большинство процессов
+                    автоматизированы, что сэкономит ваше время и деньги!
+                </p>
+            </div>
+            <form action="#" class="form">
+                <fieldset class="form__fieldset">
+                    <label class="form__label" for="name">
+                        Ваше имя
+                    </label>
+                    <input class="form__input" type="text" id="name">
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <label class="form__label" for="nameCompany">
+                        Название Компании
+                    </label>
+                    <input class="form__input" type="text" id="nameCompany">
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <label class="form__label" for="mail">
+                        E-mail
+                    </label>
+                    <input class="form__input" type="text" id="mail">
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label class="form__label" for="phone">
+                        Номер телефона
+                    </label>
+                    <input class="form__input" inputmode="numeric" type="tel" id="phone"
+                        placeholder="+7 (XXX) - XXX XX XX">
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label class="form__label" for="code">
+                        Промокод
+                    </label>
+                    <input class="form__input" type="text" id="code">
+                </fieldset>
+
+                <button type="submit" class="form__button btn">
+                    Далее
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-content">
+
+                <div class="footer-content__item">
+                    <h3 class="title h3">
+                        Наши офисы
+                    </h3>
+                    <div class="footer-content__info footer-content__info_row">
+                        <span>
+                            Московский офис <br>
+                            +7 455 267-89-07 <br>
+                            Берсеневский пер., д. 56, стр. 4,<br>
+                            6-й эт., Москва, 567754
+                        </span>
+                        <span>
+                            Ростовский офис <br>
+                            +7 878 888-01-67 <br>
+                            Буденовский пр-т, д. 84, 6-й эт.,<br>
+                            Ростов-на-Дону, 679965
+                        </span>
+                    </div>
+                </div>
+
+                <div class="footer-content__item">
+                    <h3 class="title h3">
+                        Мы в соц сетях
+                    </h3>
+                    <div class="footer-content__info">
+                        <a href="#">
+                            Instagram
+                        </a>
+                        <a href="#">
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="footer-content__item">
+                    <h3 class="title h3">
+                        Свяжитесь с нами
+                    </h3>
+                    <div class="footer-content__info">
+                        <a class="link-tel" href="tel:+36787547894">
+                            +3 67 8754 7894
+                        </a>
+                        <a href="mailto:mflowers@flo.com">
+                            mflowers@flo.com
+                        </a>
+                        <button class="footer__btn btn" href="#">
+                            Написать
+                            <svg class="icon-svg">
+                                <use href="sprite.svg#mail">
+                                </use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="coupiright coupiright-mob">
+                Авторские права 2008-2022 M-flowers.com
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,32 @@
+.toggle {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #9B9B99;
+    display: none;
+
+    input {
+        display: none;
+
+        &:checked+label {
+            color: #372E11;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1045px) {
+    .toggle {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .toggle {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

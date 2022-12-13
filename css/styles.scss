@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Marmelad';
+    src: url('/fonts/MarmeladRegular.eot');
+    src: url('/fonts/MarmeladRegular.eot') format('embedded-opentype'),
+        url('/fonts/MarmeladRegular.woff2') format('woff2'),
+        url('/fonts/MarmeladRegular.woff') format('woff'),
+        url('/fonts/MarmeladRegular.ttf') format('truetype'),
+        url('/fonts/MarmeladRegular.svg#MarmeladRegular') format('svg');
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/RalewayRegular.eot');
+    src: url('/fonts/RalewayRegular.eot') format('embedded-opentype'),
+        url('/fonts/RalewayRegular.woff2') format('woff2'),
+        url('/fonts/RalewayRegular.woff') format('woff'),
+        url('/fonts/RalewayRegular.ttf') format('truetype'),
+        url('/fonts/RalewayRegular.svg#RalewayRegular') format('svg');
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/RalewayMedium.eot');
+    src: url('/fonts/RalewayMedium.eot') format('embedded-opentype'),
+        url('/fonts/RalewayMedium.woff2') format('woff2'),
+        url('/fonts/RalewayMedium.woff') format('woff'),
+        url('/fonts/RalewayMedium.ttf') format('truetype'),
+        url('/fonts/RalewayMedium.svg#RalewayMedium') format('svg');
+
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/RalewaySemiBold.eot');
+    src: url('/fonts/RalewaySemiBold.eot') format('embedded-opentype'),
+        url('/fonts/RalewaySemiBold.woff2') format('woff2'),
+        url('/fonts/RalewaySemiBold.woff') format('woff'),
+        url('/fonts/RalewaySemiBold.ttf') format('truetype'),
+        url('/fonts/RalewaySemiBold.svg#RalewaySemiBold') format('svg');
+
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/RobotoMedium.eot');
+    src: url('/fonts/RobotoMedium.eot') format('embedded-opentype'),
+        url('/fonts/RobotoMedium.woff2') format('woff2'),
+        url('/fonts/RobotoMedium.woff') format('woff'),
+        url('/fonts/RobotoMedium.ttf') format('truetype'),
+        url('/fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+// base colors
+$Black: #372E11;
+$YellowL: #FFE182;
+$YellowExtraL: #FFF8E1;
+$GreyLight: #EDEDED;
+$Brown: #372E11;
+
+
+.body {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: $Black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}
+
+input:-webkit-autofill {
+    box-shadow: inset 0 0 0 50px #FFF8E1 !important;
+    -webkit-text-fill-color: #8E825C !important;
+}
+
+input:-internal-autofill-selected {
+    box-shadow: inset 0 0 0 50px #FFF8E1 !important;
+    -webkit-text-fill-color: #8E825C !important;
+}
+
+.link {
+    text-decoration: none;
+    outline: none;
+    color: $Black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1420px;
+}
+
+* {
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.title {
+    font-family: 'Marmelad';
+    margin-bottom: 40px;
+}
+
+.h1.title {
+    font-size: 56px;
+    line-height: 67px;
+}
+
+.h2.title {
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.h3.title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 24px;
+}
+
+.block {
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 887px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.card-form {
+    width: 100%;
+    max-width: 1140px;
+    padding: 80px;
+}
+
+.section-form {
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-form {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+
+    .block-text {
+        width: 100%;
+        max-width: 580px;
+    }
+}
+
+.icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: #000000;
+}
+
+.coupiright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #B9B3B3;
+    margin-top: 48px;
+    display: none;
+}
+
+@media screen and (max-width: 1045px) {
+    .block {
+        margin-top: -80px;
+    }
+
+    .section-form {
+        padding: 40px 0;
+    }
+
+    .card-form {
+        padding: 32px;
+        flex-direction: column;
+        background-image: none !important;
+        background: #fffbed;
+        max-width: 688px;
+        row-gap: 58px
+    }
+
+    .coupiright {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .h1.title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 24px;
+        margin-top: 0;
+    }
+
+    .h2.title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 32px;
+    }
+
+    .block {
+        margin-top: 0px;
+    }
+
+    .description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .body {
+        font-size: 16px;
+    }
+
+    .card-form {
+        row-gap: 32px;
+        padding: 20px;
+    }
+
+    .section-form {
+        padding: 20px;
+
+    }
+}
+
+
+@import "../includes/burger";
+@import "../includes/btn";
+@import "../includes/entry";
+@import "../includes/footer";
+@import "../includes/form";
+@import "../includes/header";
+@import "../includes/menu-nav";
+@import "../includes/links";
+@import "../includes/toggle";
+@import "../includes/toggle";

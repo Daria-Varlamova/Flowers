@@ -1,0 +1,29 @@
+document.querySelectorAll('.link-js').forEach((elem) => {
+
+	elem.onmouseenter =
+	elem.onmouseleave = (e) => {
+
+		const tolerance = 10
+
+		const left = 0
+		const right = elem.clientWidth
+
+		let x = e.pageX - elem.offsetLeft
+
+		if (x - tolerance < left) x = left
+		if (x + tolerance > right) x = right
+
+		elem.style.setProperty('--x', `${ x }px`)
+
+	}
+})
+
+let hamburger = document.querySelector(".hamburger-js");
+const body = document.querySelector('.body');
+
+if (hamburger) {
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        body.classList.toggle('active-menu');
+    });
+}
